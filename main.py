@@ -1,5 +1,15 @@
 import os
 import shutil
+import colorama
+import subprocess
+
+# terminal's customization
+subprocess.run(['prompt 🧽 '], shell=True)
+subprocess.run(['title Sort-My-Files'], shell=True)
+subprocess.run(['cls'], shell=True)
+
+# init colorama
+colorama.init()
 
 # Extensions
 """
@@ -20,12 +30,11 @@ extensions = {
 """
 
 # Change directory
-path = input("Enter path to files you want to sort: ")
-os.chdir(path)
+path = input("\nEnter path to files you want to sort: ")
 if not os.path.exists(path):
-    print("Error: The directory path does not exist.")
+    print(colorama.Fore.RED + "Error: The directory path does not exist." + colorama.Style.RESET_ALL)
     exit()
-
+os.chdir(path)
 # Open file
 """
 with open('data.txt', 'r') as file:
