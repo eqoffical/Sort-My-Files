@@ -35,6 +35,7 @@ if not os.path.exists(path):
     print(colorama.Fore.RED + "Error: The directory path does not exist." + colorama.Style.RESET_ALL)
     exit()
 os.chdir(path)
+
 # Open file
 """
 with open('data.txt', 'r') as file:
