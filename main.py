@@ -11,6 +11,11 @@ subprocess.run(['cls'], shell=True)
 # init colorama
 colorama.init()
 
+# messages
+error = f"{colorama.Fore.RED}Error: "           # Error
+notif = f"{colorama.Fore.BLUE}Notification: "  # Notification
+end = f"{colorama.Style.RESET_ALL}"             # Reset all styles
+
 # Extensions
 """
 extensions = {
@@ -32,7 +37,7 @@ extensions = {
 # Change directory
 path = input("\nEnter path to files you want to sort: ")
 if not os.path.exists(path):
-    print(colorama.Fore.RED + "Error: The directory path does not exist." + colorama.Style.RESET_ALL)
+    print(f"{error}The directory path does not exist.{end}")
     exit()
 os.chdir(path)
 
@@ -54,7 +59,7 @@ if confirmation == "y":
     print("You said yea")
 
 elif confirmation == "n":
-    print ("You said no")
+    print (f"{notif} You said no.{end}")
 
 else:
     print("bruh")
