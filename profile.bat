@@ -1,5 +1,5 @@
-pip install --upgrade pip
-pip install python==3.9.5
+pip install python
+python.exe -m pip install --upgrade pip
 
 prompt 🧽 
 title Sort-My-Files
