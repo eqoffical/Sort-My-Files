@@ -14,6 +14,7 @@ colorama.init()
 # messages
 error = f"{colorama.Fore.RED}Error: "           # Error
 notif = f"{colorama.Fore.BLUE}Notification: "   # Notification
+warn = f"{colorama.Fore.YELLOW}Warning: "       # Warning
 scess = f"{colorama.Fore.GREEN}Success: "       # Success
 end = f"{colorama.Style.RESET_ALL}"             # Reset all styles
 
