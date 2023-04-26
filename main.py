@@ -3,17 +3,17 @@ import shutil
 import colorama
 import subprocess
 
-# terminal's customization
-subprocess.run(['prompt 🧽 '], shell=True)
-subprocess.run(['title Sort-My-Files'], shell=True)
-subprocess.run(['cls'], shell=True)
+# profile system (terminal customiz)
+profile = "profile.bat"                         # Profile name
+bat_path = os.path.join(os.getcwd(), profile)   # Path to bat file
+subprocess.call(bat_path, shell=True)           # Launch profile
 
 # init colorama
 colorama.init()
 
 # messages
 error = f"{colorama.Fore.RED}Error: "           # Error
-notif = f"{colorama.Fore.BLUE}Notification: "  # Notification
+notif = f"{colorama.Fore.BLUE}Notification: "   # Notification
 end = f"{colorama.Style.RESET_ALL}"             # Reset all styles
 
 # Extensions
