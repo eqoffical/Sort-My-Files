@@ -3,11 +3,6 @@ import shutil
 import colorama
 import subprocess
 
-# profile system (terminal customiz)
-profile = "profile.bat"                         # Profile name
-bat_path = os.path.join(os.getcwd(), profile)   # Path to bat file
-subprocess.call(bat_path, shell=True)           # Launch profile
-
 # init colorama
 colorama.init()
 
@@ -86,3 +81,5 @@ elif confirmation.lower() == "n":
 else:
     print(f"{error}Invalid character."
           f"{notif}Enter Y for approval or N for rejection.{end}\n")
+
+input("Press any key to exit...")
