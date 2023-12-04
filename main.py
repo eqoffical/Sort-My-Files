@@ -15,7 +15,7 @@ end = f"{colorama.Style.RESET_ALL}"             # Reset all styles
 
 # Extensions
 extensions = { 
-    "Text": [".txt", ".csv", ".log", ".md", ".tex", ".cfg", ".ini],
+    "Text": [".txt", ".csv", ".log", ".md", ".tex", ".cfg", ".ini"],
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".tif", ".svg", ".eps", ".raw", ".ico", ".psd", ".webp"],
     "Audio": [".mp3", ".wav", ".aac", ".wma", ".ogg", ".flac", ".alac", ".aiff", ".dsd", ".m4a", ".mid"],
     "Videos": [".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm", ".mpeg", ".3gp", ".rmvb", ".m4v", ".vob"],
